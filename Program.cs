@@ -44,21 +44,21 @@
 // Console.WriteLine($"Сумма баллов за сданные работы: {sum}");
 // Console.WriteLine($"Сколько работ было сдано: {sum}");
 
-// int[] groupIds = {101,104,107,104,110};
-// bool HasDuplicates = false;
-// for (int i = 0; i < groupIds.Length; i++)
-// {
-//     for (int j = i + 1; j < groupIds.Length; j++)
-//     {
-//         if (groupIds[i] == groupIds[j])
-//         {
-// Console.WriteLine(groupIds[i] + " и " + groupIds[j]);
-//             return;
-//         }
+int[] groupIds = {101,104,107,104,110};
+bool HasDuplicates = false;
+for (int i = 0; i < groupIds.Length; i++)
+{
+    for (int j = i + 1; j < groupIds.Length; j++)
+    {
+        if (groupIds[i] == groupIds[j])
+        {
+Console.WriteLine(groupIds[i] + " и " + groupIds[j]);
+            return;
+        }
 
-//     }
-// }
-// Console.WriteLine("Все номера уникальны");
+    }
+}
+Console.WriteLine("Все номера уникальны");
 
 
 // int days = 5;
@@ -148,17 +148,15 @@
 // Console.WriteLine(sum);
 
 
-using System.Globalization;
 
-int[] numbers = {1,-2,3,4,5,-6};
-int count = 0;
-for (int i = 0; i<numbers.Length; i++)
-{
-    if (numbers[i] < 0)
-    {
-        break;
-    }
-    count++;
-}
-Console.WriteLine(count);
-ssssssssssssssssssssss
+// int[] numbers = {1,-2,3,4,5,-6};
+// int count = 0;
+// for (int i = 0; i<numbers.Length; i++)
+// {
+//     if (numbers[i] < 0)
+//     {
+//         break;
+//     }
+//     count++;
+// }
+// Console.WriteLine(count);
